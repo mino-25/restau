@@ -1,9 +1,15 @@
 export default function Header() {
   return (
-    <header className="">
-      <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-gray-900">Restaurant App</h1>
+    <header className="flex justify-between items-center p-5">
+      <div className="">
+        <h1 className="text-2xl font-amoria text-gray-900">Amoura</h1>
       </div>
+      <nav className="flex justify-around gap-15">
+        <p>Home</p>
+        <p>Menu</p>
+        <p>About</p>
+        <p>Contact</p>
+      </nav>
     </header>
   )
 }
