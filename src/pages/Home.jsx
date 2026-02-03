@@ -1,25 +1,9 @@
 import Grill from "../assets/Grill.mp4"
+import { useEffect, useRef } from "react";
 
 export default function Home() {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add(
-            'animate-[fade-slide_0.6s_ease-out_forwards]'
-          )
-          observer.unobserve(entry.target) // une seule fois
-        }
-      })
-    },
-    {
-      threshold: 0.2, // 20% visible = déclenchement
-    }
-  )
-
-  document.querySelectorAll('[data-animate]').forEach((el) => {
-    observer.observe(el)
-  })
+  // (global observer removed) — use <AnimatedText/> which manages observation per-element
+  
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white max-w-screen overflow-x-hidden">
@@ -40,19 +24,14 @@ export default function Home() {
 
         {/* Contenu au-dessus */}
         <div className="relative z-10 flex items-center justify-center h-full text-white">
-          <h1 className="text-5xl font-amoria">Amoura</h1>
+          <h1 className="text-5xl font-amoria">Amoura</h1> 
         </div>
 
       </section>
       <section>
-        <div className="p-8 text-center ">
-          <h2 
-            className="opacity-0 will-change-transform"
-            data-animate
-          >
-            Bienvenue chez Amoura
-          </h2>
-          <p>
+        <div className="p-8 text-center min-h-screen">
+          <p className="text-2xl md:text-3xl font-semibold animate-fade-slide">Bienvenue chez Amoura</p>
+          <p className="animate-fade-slide">
             au plaisir de vous servir les meilleures grillades.
           </p>
         </div>
