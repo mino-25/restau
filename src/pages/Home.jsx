@@ -1,6 +1,8 @@
 import Grill from "../assets/Grill.mp4"
 import { useEffect, useRef } from "react";
 
+import FadeInOnScroll from "../components/FadeInOnScroll";
+
 export default function Home() {
   // (global observer removed) — use <AnimatedText/> which manages observation per-element
   
@@ -28,14 +30,24 @@ export default function Home() {
         </div>
 
       </section>
-      <section>
-        <div className="p-8 text-center min-h-screen">
-          <p className="text-2xl md:text-3xl font-semibold animate-fade-slide">Bienvenue chez Amoura</p>
-          <p className="animate-fade-slide">
-            au plaisir de vous servir les meilleures grillades.
-          </p>
+     <section>
+        <div className="p-8 text-center min-h-screen space-y-4">
+          
+          <FadeInOnScroll>
+            <p className="text-2xl md:text-3xl font-semibold">
+              Bienvenue chez Amoura
+            </p>
+          </FadeInOnScroll>
+
+          <FadeInOnScroll delay={150}>
+            <p>
+              au plaisir de vous servir les meilleures grillades.
+            </p>
+          </FadeInOnScroll>
+
         </div>
       </section>
+
     </div>
   )
 }
