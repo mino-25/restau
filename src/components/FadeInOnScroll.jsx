@@ -26,8 +26,8 @@ export default function FadeInOnScroll({ children, delay = 0 }) {
     <div
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`transition-all duration-700 ease-out
-        ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}
+      className={`transition-all duration-900 ease-in-out
+        ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
       `}
     >
       {children}
