@@ -1,6 +1,7 @@
 import Grill from "../assets/Grill.mp4"
 import Chef from "../assets/chef-cooking-salad.jpg"
 import Salade from "../assets/chicken-salad.jpg"
+import ChefFire from "../assets/chef-cooking-fire.jpg"
 import { useEffect, useRef } from "react";
 
 import FadeInOnScroll from "../components/FadeInOnScroll";
@@ -52,6 +53,26 @@ export default function Home() {
             <img src={Salade} alt="Salade de poulet" className="w-64 h-128 object-cover" />
           </div>
 
+          <FadeInOnScroll>
+            <p className="font-brand px-60">
+              Venez découvrir les spécialités de la terre et de la mer avec l'expertise de notre chef.
+              Les saveurs authentiques et les présentations soignées de nos plats vous promettent une expérience culinaire inoubliable.
+              La carte évolue au fil des saisons pour vous offrir le meilleur de chaque période de l'année, avec des ingrédients frais et locaux soigneusement sélectionnés.
+
+            </p>
+          </FadeInOnScroll>
+
+        </div>
+
+        <div className="flex items-center justify-center bg-black/98 text-white p-16 space-x-40 mt-24">
+          <img src={ChefFire} alt="Chef en train de cuisiner au feu" className="w-96 h-128 object-cover" />
+          <p className="px-10 font-brand w-1/3">
+            Notre chef prépare les plats avec passion et expertise.
+            Chaque assiette est une œuvre d'art culinaire, alliant saveurs, textures et présentation pour offrir une expérience gastronomique inoubliable.
+            Le savoir-faire de notre chef se reflète dans chaque plat, où la créativité et la maîtrise technique se conjuguent pour émerveiller vos papilles.
+            Notre chef s'engage à utiliser des ingrédients de qualité et à créer des plats qui ravissent les sens, faisant de chaque repas une expérience mémorable pour nos clients.
+
+          </p>
         </div>
       </section>
 
