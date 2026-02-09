@@ -33,7 +33,7 @@ export default function Home() {
 
       </section>
      <section>
-        <div className="p-8 text-center min-h-screen space-y-4">
+        <div className="p-8 text-center min-h-screen space-y-10 mt-24">
           
           <FadeInOnScroll>
             <p className="text-2xl md:text-3xl font-brand">
@@ -42,7 +42,7 @@ export default function Home() {
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={150}>
-            <p className="font-brand">
+            <p className="font-brand px-5">
               Niché au cœur de la ville, notre restaurant vous accueille dans un cadre raffiné où se rencontrent élégance, convivialité et gastronomie. Notre chef sublime des produits frais et de saison pour vous offrir une cuisine créative, délicate et généreuse. Chaque détail est pensé pour faire de votre repas une expérience unique et mémorable.
             </p>
           </FadeInOnScroll>
