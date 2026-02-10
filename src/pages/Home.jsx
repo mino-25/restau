@@ -74,6 +74,10 @@ export default function Home() {
 
           </p>
         </div>
+
+        <div>
+          <p className="text-center text-xl font-brand">Nous vous acceuillerons à l'occasion de nos prochaines ouvertures !</p>
+        </div>
       </section>
 
     </div>
