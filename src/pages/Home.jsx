@@ -2,6 +2,7 @@ import Grill from "../assets/Grill.mp4"
 import Chef from "../assets/chef-cooking-salad.jpg"
 import Salade from "../assets/chicken-salad.jpg"
 import ChefFire from "../assets/chef-cooking-fire.jpg"
+import Table from "../assets/young-waitress-setting-table.jpg"
 import { useEffect, useRef } from "react";
 
 import FadeInOnScroll from "../components/FadeInOnScroll";
@@ -75,8 +76,11 @@ export default function Home() {
           </p>
         </div>
 
-        <div>
-          <p className="text-center text-xl font-brand">Nous vous acceuillerons à l'occasion de nos prochaines ouvertures !</p>
+        <div className="mt-24 space-y-10 p-8">
+          <FadeInOnScroll>
+            <p className="text-center text-xl font-brand">Nous vous acceuillerons à l'occasion de nos prochaines ouvertures !</p>
+          </FadeInOnScroll>
+          <img src={Table} alt="Serveuse en train de mettre la table" className="w-full h-96 object-cover" />
         </div>
       </section>
 
