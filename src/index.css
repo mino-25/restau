@@ -15,7 +15,25 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'TropicalAvenue';
+  src: url(./fonts/TropicalAvenue.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Code';
+  src: url(./fonts/CodeLight.otf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
     --font-amoria: 'Amoria', sans-serif;
     --font-brand: 'Brand', sans-serif;
+    --font-tropical: 'TropicalAvenue', sans-serif;
+    --font-code: 'Code', monospace;
 }

@@ -29,8 +29,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/10"></div>
 
         {/* Contenu au-dessus */}
-        <div className="relative z-10 flex items-center justify-center h-full text-white">
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
           <h1 className="text-5xl font-amoria">Amoura</h1> 
+          <h2 className="mt-4 text-2xl font-code">Une expérience d'excellence</h2>
         </div>
 
       </section>
