@@ -5,10 +5,10 @@ export default function Header() {
         <h1 className="text-2xl font-amoria">Amoura</h1>
       </div>
       <nav className="flex justify-around gap-15 font-code">
-        <a href="#home" className="hover:text-gray-400">Home</a>
-        <a href="#menu" className="hover:text-gray-400">Menu</a>
-        <a href="#about" className="hover:text-gray-400">About</a>
-        <a href="#contact" className="hover:text-gray-400">Contact</a>
+        <Link to="/" className="hover:text-gray-400">Home</Link>
+        <Link to="/menu" className="hover:text-gray-400">Menu</Link>
+        <Link to="/" className="hover:text-gray-400">About</Link>
+        <Link to="/" className="hover:text-gray-400">Contact</Link>
       </nav>
     </header>
   )
